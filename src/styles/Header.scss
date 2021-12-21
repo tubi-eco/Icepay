@@ -1,0 +1,39 @@
+.header{
+  width: 100%;
+  border-bottom: 5px solid #ebf2f5;
+  padding-bottom: 20px;
+  .container-lg{
+    .logo{
+      padding-top: 20px;
+      display: inline-block;
+      width: 50%;
+      text-align: left;
+    }
+    .mutliLanguage{
+      display: inline-block;
+      width: 50%;
+      text-align: right;
+      padding-right: 10px;
+      .selectbox{
+        width: 100px;
+        border: 1px solid #6d8ea7;
+        border-radius: 2px;
+        color: #5e6e75;
+        font-size: 12px;
+        padding: 5px;
+        option{
+          &:nth-child(1){
+           &:after{
+             content: '';
+            background: url(@/assets/united-kingdom.png);
+            background-size: 20px;
+            background-position:center right;
+            width: 10px;
+            height: 10px;
+           }
+          }
+        }
+      }
+    }
+  }
+}
